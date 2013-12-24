@@ -18,17 +18,18 @@ import webapp2
 
 class MainHandler(webapp2.RequestHandler):
     def get(self):
-        self.response.write('Hello world!!')
-
-
-class RSVPHandler(webapp2.RequestHandler):
-    def get(self):
-        if self.request.get('pass') == 'admin':
-            self.response.out.write('Here be the RSVP!');
+        if self.request.get('pass') == 'password':
+            self.response.out.write('authorized');
         else:
-            self.response.out.write('<form method="GET">password: <input type="password" name="pass"/><input type="submit" value="login"/></form>')
+            self.response.out.write('<form method="get"><input type="password" name="pass"/><input type="submit" value="login"/></form>')
+
+class HotelHandler(webapp2.RequestHandler):
+    def get(self):
+        self.response.out.write('<b>hotel stuff here</b>');
+
 
 app = webapp2.WSGIApplication([
-    ('/', MainHandler),
-    ('/rsvp', RSVPHandler),
+    ('/rsvp', MainHandler),
+    ('/hotel', HotelHandler),
 ], debug=True)
+
