@@ -18,8 +18,17 @@ import webapp2
 
 class MainHandler(webapp2.RequestHandler):
     def get(self):
-        self.response.write('Hello world!!!')
+        self.response.write('Hello world!!')
+
+
+class RSVPHandler(webapp2.RequestHandler):
+    def get(self):
+        if self.request.get('pass') == 'admin':
+            self.response.out.write('Here be the RSVP!');
+        else:
+            self.response.out.write('<form method="GET">password: <input type="password" name="pass"/><input type="submit" value="login"/></form>')
 
 app = webapp2.WSGIApplication([
-    ('/', MainHandler)
+    ('/', MainHandler),
+    ('/rsvp', RSVPHandler),
 ], debug=True)
