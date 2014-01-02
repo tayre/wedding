@@ -14,22 +14,42 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 #
+import os
+import jinja2
 import webapp2
 
-class MainHandler(webapp2.RequestHandler):
+JINJA_ENVIRONMENT = jinja2.Environment(
+    loader=jinja2.FileSystemLoader(os.path.dirname(__file__)),
+    extensions=['jinja2.ext.autoescape'],
+    autoescape=True)
+
+class RSVPHandler(webapp2.RequestHandler):
     def get(self):
         if self.request.get('pass') == 'password':
-            self.response.out.write('authorized');
+            template = JINJA_ENVIRONMENT.get_template('templates/rsvp.html')
+            self.response.write(template.render())
         else:
-            self.response.out.write('<form method="get"><input type="password" name="pass"/><input type="submit" value="login"/></form>')
+            template = JINJA_ENVIRONMENT.get_template('templates/login.html')
+            self.response.write(template.render())
 
 class HotelHandler(webapp2.RequestHandler):
     def get(self):
-        self.response.out.write('<b>hotel stuff here</b>');
+        template_values = {
+            'data': 'lorem ipsum',
+            'more_data': 'bar',
+        }
 
+        template = JINJA_ENVIRONMENT.get_template('templates/hotel.html')
+        self.response.write(template.render(template_values))
+
+class RegistryHandler(webapp2.RequestHandler):
+    def get(self):
+            template = JINJA_ENVIRONMENT.get_template('templates/registry.html')
+            self.response.write(template.render())
 
 app = webapp2.WSGIApplication([
-    ('/rsvp', MainHandler),
+    ('/rsvp', RSVPHandler),
     ('/hotel', HotelHandler),
+    ('/registry', RegistryHandler),
 ], debug=True)
 

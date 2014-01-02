@@ -7,6 +7,8 @@ threadsafe: yes
 libraries:
 - name: webapp2
   version: "2.5.2"
+- name: jinja2
+  version: "2.6"
 
 handlers:
 - url: /favicon\.ico
@@ -17,6 +19,9 @@ handlers:
   script: main.app
   
 - url: /hotel
+  script: main.app
+  
+- url: /registry
   script: main.app
 
 # image files
