@@ -36,10 +36,7 @@ handlers:
   #expiration: "1h"
 
 # site root
-- url: /
-  static_files: static/index.html
-  upload: static/index.html
-  expiration: "15m"
+
 
 - url: /.*
   script: main.app

@@ -23,11 +23,34 @@ JINJA_ENVIRONMENT = jinja2.Environment(
     extensions=['jinja2.ext.autoescape'],
     autoescape=True)
 
-class RSVPHandler(webapp2.RequestHandler):
+class LoginHandler(webapp2.RequestHandler):
     def get(self):
         if self.request.get('pass') == 'password':
+            self.response.set_cookie('mykey', 'myvalue', max_age=3600, path='/')
+            template = JINJA_ENVIRONMENT.get_template('templates/index.html')
+            self.response.write(template.render())
+
+        else:
+            template = JINJA_ENVIRONMENT.get_template('templates/login.html')
+            self.response.write(template.render())
+
+class IndexHandler(webapp2.RequestHandler):
+    def get(self):
+        if self.request.cookies.get('mykey') == 'myvalue': 
+            template = JINJA_ENVIRONMENT.get_template('templates/index.html')
+            self.response.write(template.render())
+
+        else:
+            template = JINJA_ENVIRONMENT.get_template('templates/login.html')
+            self.response.write(template.render())
+
+
+class RSVPHandler(webapp2.RequestHandler):
+    def get(self):
+        if self.request.cookies.get('mykey') == 'myvalue': 
             template = JINJA_ENVIRONMENT.get_template('templates/rsvp.html')
             self.response.write(template.render())
+
         else:
             template = JINJA_ENVIRONMENT.get_template('templates/login.html')
             self.response.write(template.render())
@@ -48,9 +71,11 @@ class RegistryHandler(webapp2.RequestHandler):
 
             
 routes = [
+    ('/', IndexHandler),
     ('/rsvp', RSVPHandler),
     ('/hotel', HotelHandler),
     ('/registry', RegistryHandler),
+    ('/login', LoginHandler),
 ]
 
 app = webapp2.WSGIApplication(routes, debug=True)
