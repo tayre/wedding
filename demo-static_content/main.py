@@ -38,7 +38,6 @@ class HotelHandler(webapp2.RequestHandler):
             'data': 'lorem ipsum',
             'more_data': 'bar',
         }
-
         template = JINJA_ENVIRONMENT.get_template('templates/hotel.html')
         self.response.write(template.render(template_values))
 
@@ -47,9 +46,17 @@ class RegistryHandler(webapp2.RequestHandler):
             template = JINJA_ENVIRONMENT.get_template('templates/registry.html')
             self.response.write(template.render())
 
-app = webapp2.WSGIApplication([
+            
+routes = [
     ('/rsvp', RSVPHandler),
     ('/hotel', HotelHandler),
     ('/registry', RegistryHandler),
-], debug=True)
+]
 
+app = webapp2.WSGIApplication(routes, debug=True)
+
+def handle_404(request, response, exception):
+    response.write('This is not the page you are looking for!')
+    response.set_status(404)
+
+app.error_handlers[404] = handle_404
