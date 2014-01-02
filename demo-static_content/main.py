@@ -56,7 +56,8 @@ routes = [
 app = webapp2.WSGIApplication(routes, debug=True)
 
 def handle_404(request, response, exception):
-    response.write('This is not the page you are looking for!')
+    template = JINJA_ENVIRONMENT.get_template('templates/404.html')
     response.set_status(404)
+    response.write(template.render())
 
 app.error_handlers[404] = handle_404
