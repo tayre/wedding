@@ -5,8 +5,11 @@
     <link rel = 'stylesheet' type = 'text/css' href = 'template_style.css'/>
   </head>
   <body>
-    <div class = 'container'>
-        <form method='post' action = 'login'><input type='password' name='pass' maxlength = '64'/><input type="submit" value="login"/></form>
+    <div class = 'misc_container'>
+        <form method='post' action = 'login' id = 'login_form'>
+            <label for='password_input'>Super Secret Password:</label>
+            <input id = 'password_input' type='password' name='pass' maxlength = '64' autofocus/>
+            <input id = 'password_submit' type="submit" value="let me in"/></form>
     </div>
   </body>
 </html>

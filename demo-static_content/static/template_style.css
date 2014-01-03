@@ -1,5 +1,35 @@
-.container {
-    font-family: Verdana;
+@font-face {
+  font-family: 'Luckiest Guy';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Luckiest Guy'), local('LuckiestGuy-Regular'), url(http://themes.googleusercontent.com/static/fonts/luckiestguy/v3/5718gH8nDy3hFVihOpkY5HhCUOGz7vYGh680lGh-uXM.woff) format('woff');
+}
+
+@font-face {
+  font-family: '8bit';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Press Start 2P'), local('PressStart2P-Regular'), url(http://themes.googleusercontent.com/static/fonts/pressstart2p/v1/8Lg6LX8-ntOHUQnvQ0E7o3dD2UuwsmbX3BOp4SL_VwM.woff) format('woff');
+}
+
+.main_container {
+    font-family: 'Luckiest Guy', Verdana, sans-serif;
     text-align: center; 
-    margin: 200px 0px
+    margin: 200px 0px;
+    font-size: 6em;
+}
+
+.misc_container {
+    text-align: center; 
+    margin: 200px 0px;
+    font-size: 1em;
+}
+
+.error {
+    font-family: '8bit';
+    padding: 40px 0;
+}
+
+.link_container {
+    text-align: center;
 }
