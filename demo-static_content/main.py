@@ -29,7 +29,7 @@ class LoginHandler(webapp2.RequestHandler):
 
     def post(self):
         if self.request.get('pass') == 'password':
-            self.response.set_cookie()
+            self.response.set_cookie('TNTSESSION', '42')
             return webapp2.redirect('/', code=303, response = self.response) #Use PRG to avoid duplicate form submission
 
         else:
