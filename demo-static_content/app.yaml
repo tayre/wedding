@@ -37,6 +37,5 @@ handlers:
 
 # site root
 
-
 - url: /.*
   script: main.app
