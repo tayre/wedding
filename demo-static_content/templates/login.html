@@ -5,12 +5,19 @@
     <link rel = 'stylesheet' type = 'text/css' href = 'template_style.css'/>
   </head>
   <body>
-    <div class = 'misc_container'>
-        <form method='post' action = 'login' id = 'login_form'>
+        <!--[if lte IE 7]>
+            Please use a Browser newer than IE7
+        <![endif]-->
+
+        <!--[if gt IE 7]><!-->
+        <div class = 'misc_container'>
+            <form method='post' action = 'login' id = 'login_form'>
             <label for='password_input'>Super Secret Password:</label>
             <input id = 'password_input' type='password' name='pass' maxlength = '64' autofocus/>
             <input id = 'password_submit' type="submit" value="let me in"/></form>
-    </div>
+        </div>
+        <!--<![endif]-->
+  
   </body>
 </html>
 {% endautoescape %}
