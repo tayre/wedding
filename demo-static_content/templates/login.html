@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-{% autoescape true %}
+
 <html>
   <head>
     <link rel = 'stylesheet' type = 'text/css' href = 'template_style.css'/>
@@ -8,7 +8,6 @@
         <!--[if lte IE 7]>
             Please use a Browser newer than IE7
         <![endif]-->
-
         <!--[if gt IE 7]><!-->
         <div class = 'misc_container'>
             <form method='post' action = 'login' id = 'login_form'>
@@ -17,7 +16,39 @@
             <input id = 'password_submit' type="submit" value="let me in"/></form>
         </div>
         <!--<![endif]-->
-  
   </body>
 </html>
-{% endautoescape %}
+
+<!-- This is by no means a secure login, so please be nice. Kemp and GDK I'm look at you!
+                ___
+             .'   `'.
+            /   _    |
+            #__/ \--/ \
+           (,  \'/ \\'/        .----.
+            |     -' |        /|     '--.
+             \   '=  /        ||    ]|   `-.
+             /`-.__.'         ||    ]|    ::|
+          .-'`-.__ \__        ||    ]|    ::|
+         /        ``  `.      ||    ]|    ::|
+       _ |     \     \  \     \|    ]|   .-'
+      / \|      \    |   \     L.__  .--'(
+     |   |\      `.  |    \  ,---|_      \---------,
+     |   | '.      './\    \/ .--._|=-    |_      /|
+     |   \   '.      '.'. /`\/ .-'          '.   / |
+     |   |     `'.     `;-:-;`)|             |-./  |
+     |   /_       `'--./_  ` )/'-------------')/)  |
+     \   | `""""----"`\//`""`/,===..'`````````/ (  |
+      |  |            / `---` `==='          /   ) |
+      /  \           /                      /   (  |
+     |    '------.  |'--------------------'|     ) |
+      \           `-|                      |    /  |
+       `--...,______|                      |   (   |
+              | |   |                      |    ) ,|
+              | |   |                      |   ( /||
+              | |   |                      |   )/ `"
+             /   \  |                      |  (/
+           .' /I\ '.|                      |  /)
+        .-'_.'/ \'. |                      | /
+        ```  `"""` `| .-------------------.||
+                    `"`                   `"`
+-->
