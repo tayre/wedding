@@ -1,26 +1,10 @@
 #!/usr/bin/env python
-#
-# Copyright 2007 Google Inc.
-#
-# Licensed under the Apache License, Version 2.0 (the "License");
-# you may not use this file except in compliance with the License.
-# You may obtain a copy of the License at
-#
-#     http://www.apache.org/licenses/LICENSE-2.0
-#
-# Unless required by applicable law or agreed to in writing, software
-# distributed under the License is distributed on an "AS IS" BASIS,
-# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-# See the License for the specific language governing permissions and
-# limitations under the License.
-#
+
 import os
 import jinja2
 import webapp2
 
-JINJA_ENVIRONMENT = jinja2.Environment(loader=jinja2.FileSystemLoader(os.path.dirname(__file__)),
-    extensions=['jinja2.ext.autoescape'],
-    autoescape=True)
+JINJA_ENVIRONMENT = jinja2.Environment(loader=jinja2.FileSystemLoader(os.path.dirname(__file__)), extensions=['jinja2.ext.autoescape'], autoescape=True)
 
 class LoginHandler(webapp2.RequestHandler):
     def get(self):
@@ -31,29 +15,26 @@ class LoginHandler(webapp2.RequestHandler):
         if self.request.get('pass') == 'password':
             self.response.set_cookie('TNTSESSION', '42')
             return webapp2.redirect('/', code=303, response = self.response) #Use PRG to avoid duplicate form submission
-
         else:
-            return webapp2.redirect('/login') #PRG
+            return webapp2.redirect('/login')
 
 class IndexHandler(webapp2.RequestHandler):
     def get(self):
-        if self.request.cookies.get('TNTSESSION') != None: 
+        if self.request.cookies.get('TNTSESSION') != None:
             template = JINJA_ENVIRONMENT.get_template('templates/index.html')
             self.response.write(template.render())
-
         else:
             template = JINJA_ENVIRONMENT.get_template('templates/login.html')
             self.response.write(template.render())
 
 class RSVPHandler(webapp2.RequestHandler):
     def get(self):
-        if self.request.cookies.get('TNTSESSION') != None: 
+        if self.request.cookies.get('TNTSESSION') != None:
             template = JINJA_ENVIRONMENT.get_template('templates/rsvp.html')
             self.response.write(template.render())
         else:
             template = JINJA_ENVIRONMENT.get_template('templates/login.html')
             self.response.write(template.render())
-
 
 routes = [
     ('/', IndexHandler),
@@ -61,7 +42,7 @@ routes = [
     ('/rsvp', RSVPHandler),
 ]
 
-app = webapp2.WSGIApplication(routes, debug=True)
+app = webapp2.WSGIApplication(routes, debug=False)
 
 def handle_404(request, response, exception):
     template = JINJA_ENVIRONMENT.get_template('templates/404.html')
