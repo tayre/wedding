@@ -5,12 +5,38 @@
   src: local('Press Start 2P'), local('PressStart2P-Regular'), url(http://themes.googleusercontent.com/static/fonts/pressstart2p/v1/8Lg6LX8-ntOHUQnvQ0E7o3dD2UuwsmbX3BOp4SL_VwM.woff) format('woff');
 }
 
-#login_page {
-    background: url('images/bg.jpg');
+BODY, HTML {
+    height: 100%;
+    margin: 0;
 }
 
-#login_page .misc_container {
-    margin-top: 50px;
+BODY {
+    height: 100%;
+    display:-ms-flexbox;
+    -ms-flex-pack:center;
+    -ms-flex-align:center;
+    display: -webkit-box;
+    -webkit-box-pack: center;
+    -webkit-box-align: center;
+    display: -moz-box;
+    -moz-box-pack: center;
+    -moz-box-align: center;
+    display: box;
+    box-pack: center;
+    box-align: center;
+}
+
+.misc_container {
+    text-align: center;
+}
+
+.error {
+    font-family: '8bit', monospace;
+    padding: 20px 0;
+}
+
+#login_page {
+    background: url('images/bg.jpg');
 }
 
 #login_page IMG {
@@ -18,10 +44,10 @@
 }
 
 #login_page #password_input {
-    padding: 20px;
+    padding: 10px;
     font-size: large;
     background: rgba(0, 0, 0, .3);
-    border: 1px dashed white;
+    border: none;
     text-align: center;
     color: white;
 }
@@ -34,12 +60,3 @@
 #404_page { }
 
 #500_page { }
-
-.misc_container {
-    text-align: center;
-}
-
-.error {
-    font-family: '8bit', monospace;
-    padding: 20px 0;
-}
