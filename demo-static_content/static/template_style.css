@@ -5,6 +5,13 @@
   src: local('Press Start 2P'), local('PressStart2P-Regular'), url(http://themes.googleusercontent.com/static/fonts/pressstart2p/v1/8Lg6LX8-ntOHUQnvQ0E7o3dD2UuwsmbX3BOp4SL_VwM.woff) format('woff');
 }
 
+@font-face {
+  font-family: 'script-font';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Sue Ellen Francisco '), local('SueEllenFrancisco'), url(http://themes.googleusercontent.com/static/fonts/sueellenfrancisco/v5/TwHX4vSxMUnJUdEz1JIgrrtXaZAN_aGv07JTA91X2HI.woff) format('woff');
+}
+
 BODY, HTML {
     height: 100%;
     margin: 0;
@@ -39,18 +46,36 @@ BODY, HTML {
     font-size: large;
     border: none;
     background: transparent;
-    border: 2px solid rgba(255,255,255,.5);
+    border: 1px solid rgba(255,255,255,.5);
     text-align: center;
     color: white;
     outline: none;
 }
 
 #login_page #password_input:focus {
-    border: 2px solid white;
+    border: 1px solid white;
 }
 
 #login_page #password_submit {
-    padding: 10px;
+    padding: 2px 10px;
+    font-family: 'script-font';
+    background: none;
+    color: white;
+    font-size: 2em;
+    border: 0px solid white;
+    background: rgba(255, 255, 255, .1);
+    border-radius:5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    position: relative;
+    top: 20px;
+}
+
+#login_page #password_submit:hover {
+    background: rgba(255, 255, 255, .8);
+    cursor: pointer;
+    outline: none;
+    color: #367ed2;
 }
 
 #404_page { }
