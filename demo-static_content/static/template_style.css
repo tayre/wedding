@@ -5,7 +5,37 @@
   src: local('Press Start 2P'), local('PressStart2P-Regular'), url(http://themes.googleusercontent.com/static/fonts/pressstart2p/v1/8Lg6LX8-ntOHUQnvQ0E7o3dD2UuwsmbX3BOp4SL_VwM.woff) format('woff');
 }
 
-.misc   _container {
+#login_page {
+    background: url('images/bg.jpg');
+}
+
+#login_page .misc_container {
+    margin-top: 50px;
+}
+
+#login_page IMG {
+    padding: 10px;
+}
+
+#login_page #password_input {
+    padding: 20px;
+    font-size: large;
+    background: rgba(0, 0, 0, .3);
+    border: 1px dashed white;
+    text-align: center;
+    color: white;
+}
+
+#login_page #password_submit {
+    margin: 10px;
+    padding: 10px;
+}
+
+#404_page { }
+
+#500_page { }
+
+.misc_container {
     text-align: center;
 }
 
@@ -13,4 +43,3 @@
     font-family: '8bit', monospace;
     padding: 20px 0;
 }
-
