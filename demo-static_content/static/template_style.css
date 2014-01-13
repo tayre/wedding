@@ -10,22 +10,6 @@ BODY, HTML {
     margin: 0;
 }
 
-BODY {
-    height: 100%;
-    display:-ms-flexbox;
-    -ms-flex-pack:center;
-    -ms-flex-align:center;
-    display: -webkit-box;
-    -webkit-box-pack: center;
-    -webkit-box-align: center;
-    display: -moz-box;
-    -moz-box-pack: center;
-    -moz-box-align: center;
-    display: box;
-    box-pack: center;
-    box-align: center;
-}
-
 .misc_container {
     text-align: center;
 }
@@ -39,21 +23,33 @@ BODY {
     background: url('images/bg.jpg');
 }
 
+#login_page .misc_container {
+    padding-top: 42px;
+}
+
 #login_page IMG {
     padding: 10px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
 }
 
 #login_page #password_input {
-    padding: 10px;
+    padding: 5px;
     font-size: large;
-    background: rgba(0, 0, 0, .3);
     border: none;
+    background: transparent;
+    border: 2px solid rgba(255,255,255,.5);
     text-align: center;
     color: white;
+    outline: none;
+}
+
+#login_page #password_input:focus {
+    border: 2px solid white;
 }
 
 #login_page #password_submit {
-    margin: 10px;
     padding: 10px;
 }
 
