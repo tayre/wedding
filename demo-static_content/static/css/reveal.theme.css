@@ -62,6 +62,9 @@ body {
     font-size:2em;
 }
 
+.reveal p.details {
+   font-size: 1em;
+}
 
 /*********************************************
  * LINKS

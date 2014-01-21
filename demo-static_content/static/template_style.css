@@ -27,7 +27,7 @@ BODY, HTML {
 }
 
 #login_page {
-    background: url('images/bg.png');
+    background: url('images/bg.jpg');
 }
 
 #login_page .misc_container {
@@ -46,14 +46,14 @@ BODY, HTML {
     font-size: large;
     border: none;
     background: transparent;
-    border: 1px solid rgba(255,255,255,.5);
+    border: 2px solid rgba(255,255,255,.5);
     text-align: center;
     color: white;
     outline: none;
 }
 
 #login_page #password_input:focus {
-    border: 1px solid white;
+    border: 2px solid white;
 }
 
 #login_page #password_submit {

@@ -3,16 +3,13 @@
     position: fixed;
     padding: 5px 45px;
     width: 123px;
-    background-color: #B12C0B;
     color: #fff;
     font-size: 1em;
     font-family: 'Verdana', sans-serif;
     text-decoration: none;
-
     -webkit-backface-visibility: hidden;
-    border: 2px dotted #fff;
-    box-shadow: 0 5px 20px 0px rgba(0,0,0,.5);
-    text-shadow: 0 0 0 #fff, 0 0 5px rgba(0,0,0,.3);
+    box-shadow: 0 10px 20px 0px rgba(0,0,0,.3);
+    text-shadow: 0 1px 1px #000;
     top: 50px;
     right: -50px;
     -ms-transform: rotate(45deg);
@@ -20,4 +17,14 @@
     -webkit-transform: rotate(45deg);
     transform: rotate(45deg);
     text-align: center;
+    letter-spacing: 3px;
+    font-weight: bold;
+    
+    background: rgb(47, 114, 211); /* Old browsers */
+    background: -moz-linear-gradient(top, rgba(119, 177, 219, 1) 0%, rgba(47, 114, 211, 1) 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(119, 177, 219, 1)), color-stop(100%,rgba(47, 114, 211, 1))); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, rgba(119, 177, 219, 1) 0%,rgba(47, 114, 211, 1) 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, rgba(119, 177, 219, 1) 0%,rgba(47, 114, 211, 1) 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, rgba(119, 177, 219, 1) 0%,rgba(47, 114, 211, 1) 100%); /* IE10+ */
+    background: linear-gradient(to bottom, rgba(119, 177, 219, 1) 0%,rgba(47, 114, 211, 1) 100%); /* W3C */
 }
