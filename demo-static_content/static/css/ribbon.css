@@ -5,7 +5,7 @@
     width: 123px;
     color: #fff;
     font-size: 1em;
-    font-family: 'Verdana', sans-serif;
+    font-family: paragraph, 'Verdana', sans-serif;
     text-decoration: none;
     -webkit-backface-visibility: hidden;
     box-shadow: 0 10px 20px 0px rgba(0,0,0,.3);
