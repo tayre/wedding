@@ -105,6 +105,17 @@ body {
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.55); }
 
 /*********************************************
+ * LISTS
+ *********************************************/
+.reveal ul {
+  list-style-image: url('../images/bullet.png')
+}
+
+.reveal ul li {
+    padding: 10px 0;
+}
+
+/*********************************************
  * NAVIGATION CONTROLS
  *********************************************/
 .reveal .controls div {
