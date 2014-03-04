@@ -53,9 +53,9 @@ BODY, HTML {
     font-family: 'script-font', Verdana;
     background: none;
     color: white;
-    width: 128px;
-    height: 128px;
-    background: url('images/submit.png');
+    width: 64px;
+    height: 64px;
+    background: url('images/submit.png') no-repeat;
     font-size: 2em;
     border: none;
     position: relative;
@@ -63,9 +63,8 @@ BODY, HTML {
 }
 
 #login_page #password_submit:hover {
-
     cursor: pointer;
-
+    background-position-y: -60px;
 }
 
 #404_page { }
