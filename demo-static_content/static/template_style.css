@@ -53,20 +53,19 @@ BODY, HTML {
     font-family: 'script-font', Verdana;
     background: none;
     color: white;
+    width: 128px;
+    height: 128px;
+    background: url('images/submit.png');
     font-size: 2em;
-    background: rgba(255, 255, 255, 0.1);
-    border-radius: 2px;
-    -webkit-border-radius: 2px;
-    -moz-border-radius: 2px;
+    border: none;
     position: relative;
     top: 20px;
 }
 
 #login_page #password_submit:hover {
-    background: rgba(255, 255, 255, 0.8);
+
     cursor: pointer;
-    outline: none;
-    color: #367ed2;
+
 }
 
 #404_page { }

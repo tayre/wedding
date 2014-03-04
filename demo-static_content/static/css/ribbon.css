@@ -4,11 +4,10 @@
     width: 123px;
     color: #fff;
     font-size: 1em;
-    font-family: 'Verdana', sans-serif;
+    font-family: 'paragraph', sans-serif;
     text-decoration: none;
     -webkit-backface-visibility: hidden;
     box-shadow: 0 10px 20px 0px rgba(0,0,0,.3);
-    text-shadow: 0 1px 1px #000;
     top: 50px;
     right: -50px;
     -ms-transform: rotate(45deg);
@@ -18,5 +17,5 @@
     text-align: center;
     letter-spacing: 3px;
     font-weight: bold;
-    background: rgb(66, 147, 206); 
+    background: rgb(117, 166, 223); 
 }
