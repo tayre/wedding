@@ -107,7 +107,13 @@ body {
 /*********************************************
  * NAVIGATION CONTROLS
  *********************************************/
-.reveal .controls div.navigate-left,
+.reveal .controls div {
+    opacity: 0; }
+
+.reveal .controls div.enabled {
+    opacity: 1; }
+
+ .reveal .controls div.navigate-left,
 .reveal .controls div.navigate-left.enabled {
   border-right-color: #FFF; }
 
