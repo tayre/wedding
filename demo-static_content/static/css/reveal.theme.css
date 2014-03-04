@@ -60,6 +60,7 @@ body {
 
 .reveal p {
     font-size:2em;
+    line-height: 1.5em;
 }
 
 .reveal p.details {
