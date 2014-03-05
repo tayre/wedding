@@ -3,11 +3,6 @@
  * Default theme for reveal.js.
  */
 
-@font-face {
-  font-family: 'sketch-font';
-  font-style: normal;
-  src: local('Miltonian'), local('Miltonian-Regular'), url(http://themes.googleusercontent.com/static/fonts/miltonian/v6/DVUl6K_XDo9HSLlx2JoxNT8E0i7KZn-EPnyo3HZu7kw.woff) format('woff');
-}
 
 @font-face {
   font-family: 'paragraph';
@@ -54,7 +49,7 @@ body {
   font-size: 3em;
   margin: 0 0 20px 0;
   color: #eeeeee;
-  font-family: "sketch-font", Impact, sans-serif;
+  font-family: "paragraph", Impact, sans-serif;
 
 }
 
