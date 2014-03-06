@@ -1,0 +1,95 @@
+BODY, HTML {
+    height: 100%;
+    margin: 0;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+     user-select: none;
+     cursor: default;
+}
+
+.misc_container {
+    text-align: center;
+}
+
+.error {
+    font-family: Verdana, sans-serif;
+    padding: 20px 0;
+}
+
+#login_page {
+    background: url('../images/bg.jpg');
+}
+
+#login_page .misc_container {
+    padding-top: 100px;
+}
+
+#login_page IMG {
+    padding: 10px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+#login_page #password_input {
+    padding: 5px;
+    font-size: large;
+    border: none;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    text-align: center;
+    color: white;
+    outline: none;
+}
+
+#login_page #password_input:focus {
+    border: 2px solid white;
+}
+
+#login_page #password_submit {
+    color: white;
+    width: 64px;
+    height: 64px;
+    background: url('../images/submit.png') no-repeat;
+    font-size: 2em;
+    border: none;
+    position: relative;
+    top: 20px;
+}
+
+#login_page #password_submit:hover {
+    cursor: pointer;
+    background-position-y: -60px;
+}
+
+#404_page { }
+
+#500_page { }
+
+
+.ribbon {
+    position: fixed;
+    padding: 5px 45px;
+    width: 123px;
+    color: #fff;
+    font-size: 1em;
+    font-family: 'paragraph', sans-serif;
+    text-decoration: none;
+    box-shadow: 0 10px 20px 0px rgba(0,0,0,.3);
+    top: 50px;
+    right: -50px;
+    -ms-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+    text-align: center;
+    letter-spacing: 3px;
+    font-weight: bold;
+    background: rgb(117, 166, 223);
+    z-index: 2;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -ms-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
