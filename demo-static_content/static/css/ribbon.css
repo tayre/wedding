@@ -6,7 +6,6 @@
     font-size: 1em;
     font-family: 'paragraph', sans-serif;
     text-decoration: none;
-    -webkit-backface-visibility: hidden;
     box-shadow: 0 10px 20px 0px rgba(0,0,0,.3);
     top: 50px;
     right: -50px;
@@ -17,5 +16,10 @@
     text-align: center;
     letter-spacing: 3px;
     font-weight: bold;
-    background: rgb(117, 166, 223); 
+    background: rgb(117, 166, 223);
+    z-index: 2;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -ms-backface-visibility: hidden;
+    backface-visibility: hidden;
 }
