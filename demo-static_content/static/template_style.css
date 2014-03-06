@@ -1,6 +1,11 @@
 BODY, HTML {
     height: 100%;
     margin: 0;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+     user-select: none;
+     cursor: default;
 }
 
 .misc_container {
