@@ -17,22 +17,26 @@ BODY, HTML {
     padding: 20px 0;
 }
 
-#login_page {
+#page_login {
     background: url('../images/bg.jpg');
 }
 
-#login_page .misc_container {
+#page_404 { }
+
+#page_500 { }
+
+#page_login .misc_container {
     padding-top: 100px;
 }
 
-#login_page IMG {
+#page_login IMG {
     padding: 10px;
     position: absolute;
     bottom: 0;
     right: 0;
 }
 
-#login_page #password_input {
+#page_login #password_input {
     padding: 5px;
     font-size: large;
     border: none;
@@ -43,11 +47,11 @@ BODY, HTML {
     outline: none;
 }
 
-#login_page #password_input:focus {
+#page_login #password_input:focus {
     border: 2px solid white;
 }
 
-#login_page #password_submit {
+#page_login #password_submit {
     color: white;
     width: 64px;
     height: 64px;
@@ -58,14 +62,12 @@ BODY, HTML {
     top: 20px;
 }
 
-#login_page #password_submit:hover {
+#page_login #password_submit:hover {
     cursor: pointer;
     background-position-y: -60px;
 }
 
-#404_page { }
 
-#500_page { }
 
 
 .ribbon {
