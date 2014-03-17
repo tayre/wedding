@@ -26,7 +26,6 @@ BODY, HTML {
 
 #page_login, #page_rsvp {
     background: url('../images/bg.jpg');
-    background-attachment: fixed;
 }
 
 #page_404 { }
