@@ -36,13 +36,6 @@ BODY, HTML {
     padding-top: 100px;
 }
 
-#page_login IMG {
-    padding: 10px;
-    position: absolute;
-    bottom: 0;
-    right: 0;
-}
-
 #page_login #password_input {
     padding: 5px;
     font-size: large;
@@ -52,6 +45,7 @@ BODY, HTML {
     text-align: center;
     color: white;
     outline: none;
+    margin: 42px 0; 
 }
 
 #page_login #password_input:focus {
@@ -59,14 +53,7 @@ BODY, HTML {
 }
 
 #page_login #password_submit {
-    color: white;
-    width: 64px;
-    height: 64px;
-    background: url('../images/submit.png') no-repeat;
-    font-size: 2em;
-    border: none;
-    position: relative;
-    top: 20px;
+
 }
 
 #page_login #password_submit:hover {
@@ -110,7 +97,7 @@ BODY, HTML {
     width: 100%;
 }
 
-#page_rsvp INPUT[type=submit] {
+#page_login INPUT[type=submit], #page_rsvp INPUT[type=submit] {
     font-weight: bold;
     width: 100px;
     height: 50px;
