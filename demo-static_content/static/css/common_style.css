@@ -36,6 +36,10 @@ BODY, HTML {
     padding-top: 100px;
 }
 
+#page_login IMG {
+    width: 100px;
+}
+
 #page_login #password_input {
     padding: 5px;
     font-size: large;
