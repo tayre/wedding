@@ -24,8 +24,8 @@ BODY, HTML {
     padding: 20px 0;
 }
 
-#page_login, #page_rsvp {
-    background: url('../images/bg.jpg');
+#page_login, #page_rsvp  {
+    background-color: #1F3E5E; 
 }
 
 #page_404 { }
@@ -129,7 +129,7 @@ BODY, HTML {
     text-align: center;
     letter-spacing: 3px;
     font-weight: bold;
-    background: rgb(117, 166, 223);
+    background: rgb(76, 113, 158);
     z-index: 2;
     -webkit-backface-visibility: hidden;
     -moz-backface-visibility: hidden;
