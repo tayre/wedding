@@ -36,10 +36,20 @@ class RSVPHandler(webapp2.RequestHandler):
             template = JINJA_ENVIRONMENT.get_template('templates/login.html')
             self.response.write(template.render())
 
+class RegistryTravelHandler(webapp2.RequestHandler):
+    def get(self):
+        if self.request.cookies.get('TNTSESSION') != None:
+            template = JINJA_ENVIRONMENT.get_template('templates/travel.html')
+            self.response.write(template.render())
+        else:
+            template = JINJA_ENVIRONMENT.get_template('templates/login.html')
+            self.response.write(template.render())
+
 routes = [
     ('/', IndexHandler),
     ('/login', LoginHandler),
     ('/rsvp', RSVPHandler),
+    ('/travel', RegistryTravelHandler),
 ]
 
 app = webapp2.WSGIApplication(routes, debug=False)

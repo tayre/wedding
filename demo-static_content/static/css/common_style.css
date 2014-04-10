@@ -24,7 +24,7 @@ BODY, HTML {
     padding: 20px 0;
 }
 
-#page_login, #page_rsvp {
+#page_login, #page_rsvp, #page_travel{
     background: url('../images/bg.jpg');
 }
 
