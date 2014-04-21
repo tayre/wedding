@@ -15,7 +15,7 @@ BODY, HTML {
      cursor: default;
 }
 
-.misc_container {
+.center {
     text-align: center;
 }
 
@@ -64,13 +64,14 @@ BODY, HTML {
     cursor: pointer;
     background-position-y: -62px;
 }
-#page_rsvp {
+
+#page_rsvp, #page_travel {
     font-family: 'paragraph';
     color: white;
     font-size: 1.75em;
 }
 
-#page_rsvp .container {
+#page_rsvp .container, #page_travel .container {
     max-width: 450px;
     margin-left: auto;
     margin-right: auto;
@@ -107,9 +108,6 @@ BODY, HTML {
     height: 50px;
 }
 
-#page_rsvp .center { 
-    text-align: center; 
-}
 
 .ribbon {
     position: fixed;
