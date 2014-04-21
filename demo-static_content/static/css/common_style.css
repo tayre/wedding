@@ -89,7 +89,7 @@ BODY, HTML {
     border: 1px dashed #CCC;
 }
 
-#page_rsvp DIV {
+#page_rsvp DIV, #page_travel DIV {
     padding: 5px;
 }
 
