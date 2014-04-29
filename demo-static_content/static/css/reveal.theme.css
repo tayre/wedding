@@ -62,26 +62,6 @@ body { /*#3572AF   to #0E3D6D */
    font-size: 1.3em;
 }
 
-/*********************************************
- * LINKS
- *********************************************/
-.reveal a:not(.image) {
-  color: #0DE5F8;
-  text-decoration: none;
-  -webkit-transition: color .15s ease;
-  -moz-transition: color .15s ease;
-  -ms-transition: color .15s ease;
-  -o-transition: color .15s ease;
-  transition: color .15s ease; }
-
-.reveal a:not(.image):hover {
-  color: #71e9f4;
-  text-shadow: none;
-  border: none; }
-
-.reveal .roll span:after {
-  color: #fff;
-  background: #0d99a5; }
 
 /*********************************************
  * IMAGES
@@ -106,10 +86,11 @@ body { /*#3572AF   to #0E3D6D */
 .reveal ul {
   list-style-image: url('../images/bullet.png');
   font-size: 1.5em;
+  margin: 0.1em;
 }
 
 .reveal ul li {
-    padding: .3em 0;
+    padding: .5em 0;
 }
 
 /*********************************************
