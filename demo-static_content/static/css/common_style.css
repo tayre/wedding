@@ -41,7 +41,13 @@ BODY, HTML {
 }
 
 #page_login, #page_rsvp, #page_travel{
-    background: url('../images/bg.jpg');
+  background: -moz-radial-gradient(center, circle cover, #3572AF 0%, #0E3D6D 100%);
+  background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, #3572AF), color-stop(100%, #0E3D6D));
+  background: -webkit-radial-gradient(center, circle cover, #3572AF 0%, #0E3D6D 100%);
+  background: -o-radial-gradient(center, circle cover, #3572AF 0%, #0E3D6D 100%);
+  background: -ms-radial-gradient(center, circle cover, #3572AF 0%, #0E3D6D 100%);
+  background: radial-gradient(center, circle cover, #3572AF 0%, #0E3D6D 100%);
+  background-color: #3572AF; 
 }
 
 #page_login .container {
