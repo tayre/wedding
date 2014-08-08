@@ -40,7 +40,7 @@ BODY, HTML {
   border: none; 
 }
 
-#page_login, #page_rsvp, #page_travel{
+#page_login, #page_rsvp, #page_travel, #page_upload{
   background: -moz-radial-gradient(center, circle cover, #3572AF 0%, #0E3D6D 100%);
   background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, #3572AF), color-stop(100%, #0E3D6D));
   background: -webkit-radial-gradient(center, circle cover, #3572AF 0%, #0E3D6D 100%);
@@ -83,7 +83,7 @@ BODY, HTML {
     background-position-y: -62px;
 }
 
-#page_rsvp, #page_travel {
+#page_rsvp, #page_travel, #page_upload {
     font-family: 'paragraph';
     color: white;
     font-size: 1.85em;
