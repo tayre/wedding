@@ -40,7 +40,7 @@ BODY, HTML {
   border: none; 
 }
 
-#page_login, #page_rsvp, #page_travel, #page_upload{
+#page_login, #page_rsvp, #page_travel, #page_upload {
   background: -moz-radial-gradient(center, circle cover, #3572AF 0%, #0E3D6D 100%);
   background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, #3572AF), color-stop(100%, #0E3D6D));
   background: -webkit-radial-gradient(center, circle cover, #3572AF 0%, #0E3D6D 100%);
@@ -89,17 +89,17 @@ BODY, HTML {
     font-size: 1.85em;
 }
 
-#page_rsvp .container, #page_travel .container {
+#page_rsvp .container, #page_travel .container, #page_upload .container {
     max-width: 450px;
     margin-left: auto;
     margin-right: auto;
 }
 
-#page_rsvp UL {
+#page_rsvp UL, #page_upload UL {
     margin: 5px; padding: 5px; 
 }
 
-#page_rsvp LI {
+#page_rsvp LI, #page_upload LI {
     list-style-type: none;
 }
 
@@ -111,16 +111,16 @@ BODY, HTML {
     padding: 5px;
 }
 
-#page_rsvp LABEL {
+#page_rsvp LABEL, #page_upload LABEL {
     display: block; 
 }
 
-#page_rsvp INPUT[type=text], #page_rsvp SELECT {
+#page_rsvp INPUT[type=text], #page_rsvp SELECT, #page_upload INPUT[type=text] {
     height: 40px;
     width: 100%;
 }
 
-#page_login INPUT[type=submit], #page_rsvp INPUT[type=submit] {
+#page_login INPUT[type=submit], #page_rsvp INPUT[type=submit], #page_upload BUTTON[type=submit] {
     font-weight: bold;
     width: 100px;
     height: 50px;
