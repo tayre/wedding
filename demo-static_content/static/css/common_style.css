@@ -55,7 +55,16 @@ BODY, HTML {
 }
 
 #page_login .container {
-    padding-top: 25px;
+  display: table;
+  vertical-align: middle;
+  text-align: center;
+  width: 100%;
+  height: 90%;
+}
+
+#page_login .sub_container {
+  display:table-cell;
+  vertical-align:middle;
 }
 
 #page_login IMG {
