@@ -20,12 +20,8 @@ class LoginHandler(webapp2.RequestHandler):
 
 class IndexHandler(webapp2.RequestHandler):
     def get(self):
-        if self.request.cookies.get('TNTSESSION') != None:
-            template = JINJA_ENVIRONMENT.get_template('templates/index.html')
-            self.response.write(template.render())
-        else:
-            template = JINJA_ENVIRONMENT.get_template('templates/login.html')
-            self.response.write(template.render())
+        template = JINJA_ENVIRONMENT.get_template('templates/index.html')
+        self.response.write(template.render())
 
 class RSVPHandler(webapp2.RequestHandler):
     def get(self):
